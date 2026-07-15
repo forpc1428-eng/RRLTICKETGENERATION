@@ -4,13 +4,14 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/manifest.json',
-        '/icon-192.png',
-        '/icon-512.png',
-        '/images/default-logo.png',
-        '/images/default-bg.png'
+        './',
+        'index.html',
+        'manifest.json',
+        'icon-192.png',
+        'icon-512.png',
+        'images/default-logo.png',
+        'images/default-ticket.png',
+        'images/splash.png'
       ]);
     })
   );
